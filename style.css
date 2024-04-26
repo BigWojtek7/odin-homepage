@@ -8,33 +8,40 @@ body {
 }
 
 header {
-  padding: 30px;
   width: 100%;
-  background: linear-gradient(
-    -30deg,
-    transparent 50%,
-    #9cc2ff 50%,
-    #9cc2ff 100%,
-    transparent 100%
-  );
 }
 
 .head-img {
+  padding: 30px;
   width: 100%;
   position: relative;
+  background: linear-gradient(
+    -30deg,
+    transparent 40%,
+    #9cc2ff 40%,
+    #9cc2ff 100%,
+    transparent 100%
+  );
 }
 
 img {
   width: 100%;
 }
 
-header .name {
+.head-img > .name {
   position: absolute;
   /* bottom: 50%; */
   left: 50%;
   transform: translate(-50%, -110%);
   color: white;
   font-size: 3rem;
+}
+
+.about > .about-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: rgb(91, 91, 91);
 }
 
 main {
@@ -69,6 +76,13 @@ main > .projects {
 .card > .card-description {
   font-size: 1.2rem;
   padding: 20px;
+}
+
+footer > .contact {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: 600px) {
