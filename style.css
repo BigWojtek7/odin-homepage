@@ -56,6 +56,15 @@ header > .about {
   
 }
 
+.head-icons {
+  text-align: center;
+}
+.head-icons img {
+  width: 2em;
+  text-align: center;
+  margin: 0 5px;
+}
+
 main {
   padding: 30px;
 }
@@ -119,8 +128,6 @@ footer > .contact {
   .head-img img {
     width: 400px;
     float: left;
-    
-    
   }
   /* .head-img > .name {
     left:700px;
@@ -128,7 +135,7 @@ footer > .contact {
   .head-img > .about {
     box-shadow: 0px 0px 15px #bebebe;
     width: 80%;
-    margin: 90px 30px 90px 70px;
+    margin: 90px 30px 10px 70px;
     border: black 1px solid;
     padding: 80px 20px
     
@@ -144,6 +151,9 @@ footer > .contact {
     font-size: 4rem;
   }
 
+  .head-icons {
+    display: none;
+  }
   footer {
     display: grid;
     grid-auto-flow: column;
