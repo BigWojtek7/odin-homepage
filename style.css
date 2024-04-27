@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: sans-serif;
 }
@@ -53,12 +54,12 @@ header > .about {
   line-height: 1.5;
   margin: 20px 0;
   color: rgb(91, 91, 91);
-  
 }
 
 .head-icons {
   text-align: center;
 }
+
 .head-icons img {
   width: 2em;
   text-align: center;
@@ -77,7 +78,7 @@ main > .projects {
 
 .projects > .card {
   box-shadow: 0px 6px 8px #bebebe;
-  max-width: 320px;
+  max-width: 400px;
 }
 
 .card > .card-screenshot {
@@ -92,6 +93,11 @@ main > .projects {
 .card > .card-title {
   font-size: 1.5rem;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-title img {
+  width: 1.2em;
 }
 
 .card > .card-description {
@@ -99,19 +105,26 @@ main > .projects {
   padding: 20px;
 }
 
-
+footer{
+  background-color: #006e5a;
+}
 footer > .contact {
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: white;
-  background-color: #006e5a;
+  /* background-color: #006e5a; */
   max-width: 799px;
 }
 
 .foot-img {
-  max-width: 799px;
+  max-width: 500px;
+}
+
+.foot-icons img {
+  width: 2em;
+  margin: 0 10px;
 }
 
 @media (min-width: 600px) {
@@ -125,25 +138,22 @@ footer > .contact {
   header > .head-img {
     max-width: 100%;
   }
+
   .head-img img {
     width: 400px;
     float: left;
   }
-  /* .head-img > .name {
-    left:700px;
-  } */
+
   .head-img > .about {
     box-shadow: 0px 0px 15px #bebebe;
     width: 80%;
     margin: 90px 30px 10px 70px;
     border: black 1px solid;
-    padding: 80px 20px
-    
+    padding: 80px 20px;
   }
 
-  .about > .about-description{
+  .about > .about-description {
     font-size: 1.5rem;
-    
   }
 
   .head-img > .name {
@@ -154,15 +164,18 @@ footer > .contact {
   .head-icons {
     display: none;
   }
+
+  main h2 {
+    text-align: left;
+  }
+
   footer {
     display: grid;
     grid-auto-flow: column;
   }
-  
+
   .foot-img {
     padding: 20px;
-    background-color:#006e5a
+    /* background-color: #006e5a; */
   }
-  
-
 }
