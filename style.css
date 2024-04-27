@@ -17,19 +17,26 @@ h2 {
 
 header {
   width: 100%;
+  background: linear-gradient(
+    -30deg,
+    transparent 300px,
+    #9cc2ff 900px,
+    #9cc2ff 1600px,
+    transparent 1600px
+  );
 }
 
 header > .head-img {
   padding: 30px;
   max-width: 799px;
   position: relative;
-  background: linear-gradient(
+  /* background: linear-gradient(
     -30deg,
     transparent 40%,
     #9cc2ff 40%,
     #9cc2ff 100%,
     transparent 100%
-  );
+  ); */
 }
 
 img {
@@ -52,7 +59,7 @@ header > .about {
 .about > .about-description {
   font-size: 1.5rem;
   line-height: 1.5;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   color: rgb(91, 91, 91);
 }
 
@@ -75,11 +82,12 @@ main > .projects {
   flex-direction: column;
   gap: 40px;
   justify-content: center;
+  align-items: center;
 }
 
 .projects > .card {
   box-shadow: 0px 6px 8px #bebebe;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .card > .card-screenshot {
@@ -131,12 +139,12 @@ footer > .contact {
   margin: 0 10px;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   main > .projects {
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
+} */
 
 @media (min-width: 800px) {
   header > .head-img {
@@ -146,13 +154,14 @@ footer > .contact {
   .head-img img {
     width: 400px;
     float: left;
+    margin-right: 40px;
   }
 
   .head-img > .about {
     box-shadow: 0px 0px 15px #bebebe;
     width: 80%;
     margin: 90px 30px 10px 70px;
-    border: black 1px solid;
+    border: rgb(163, 163, 163) 1px solid;
     padding: 80px 20px;
   }
 
@@ -167,6 +176,11 @@ footer > .contact {
 
   .head-icons {
     display: none;
+  }
+
+  main > .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   main h2 {
