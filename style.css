@@ -30,16 +30,7 @@ header > .head-img {
   padding: 30px;
   max-width: 799px;
   position: relative;
-  /* background: linear-gradient(
-    -30deg,
-    transparent 40%,
-    #9cc2ff 40%,
-    #9cc2ff 100%,
-    transparent 100%
-  ); */
 }
-
-
 
 .head-img > img {
   width: 100%;
@@ -63,7 +54,6 @@ header > .about {
 .about > .about-description {
   font-size: 1.5rem;
   line-height: 1.5;
-  /* margin: 20px 0; */
   color: rgb(91, 91, 91);
 }
 
@@ -118,7 +108,7 @@ main > .projects {
   padding: 0 20px 70px 20px;
 }
 
-footer{
+footer {
   background-color: #006e5a;
   margin-top: 50px;
 }
@@ -128,27 +118,21 @@ footer > .contact {
   flex-direction: column;
   gap: 20px;
   color: white;
-  /* background-color: #006e5a; */
   max-width: 799px;
 }
+
 .contact p {
   font-size: 1.5rem;
 }
-.foot-img img{
-  width:100%;
+
+.foot-img img {
+  width: 100%;
 }
 
 .foot-icons img {
   width: 2em;
   margin: 0 10px;
 }
-
-/* @media (min-width: 600px) {
-  main > .projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-} */
 
 @media (min-width: 800px) {
   header > .head-img {
@@ -165,7 +149,6 @@ footer > .contact {
     box-shadow: 0px 3px 10px #bebebe;
     width: 85%;
     margin: 90px 30px 10px 70px;
-    /* border: rgb(213, 213, 213) 1px solid; */
     padding: 80px 20px;
   }
 
@@ -199,11 +182,10 @@ footer > .contact {
   .foot-img {
     padding: 20px;
     max-width: 600px;
-    min-width: 400px;;
-    /* background-color: #006e5a; */
+    min-width: 400px;
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .contact p {
     font-size: 2.5rem;
   }
