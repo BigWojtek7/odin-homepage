@@ -74,6 +74,7 @@ main > .projects {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  justify-content: center;
 }
 
 .projects > .card {
@@ -117,9 +118,12 @@ footer > .contact {
   /* background-color: #006e5a; */
   max-width: 799px;
 }
-
+.contact p {
+  font-size: 1.5rem;
+}
 .foot-img {
-  max-width: 500px;
+  width:100%;
+
 }
 
 .foot-icons img {
@@ -176,6 +180,13 @@ footer > .contact {
 
   .foot-img {
     padding: 20px;
+    max-width: 600px;
+    min-width: 400px;;
     /* background-color: #006e5a; */
+  }
+}
+@media (min-width: 1200px){
+  .contact p {
+    font-size: 2.5rem;
   }
 }
